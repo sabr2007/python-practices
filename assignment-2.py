@@ -26,6 +26,7 @@ elif subtotal >= 7000:
 
 total = subtotal - discount
 
+print("-" * 30)
 print(f"Discount tier :", ("Yes discount") if subtotal >= 3000 else ("No discount"))
 print(f"Discount : {discount} KZT")
 print(f"Total : {total} KZT")
