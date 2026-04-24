@@ -84,7 +84,9 @@ class DataAnalyser:
 
         high_gpa = list(filter(lambda s: float(s["GPA"]) > 3.8, self.students))
         gpa_values = list(map(lambda s: float(s["GPA"]), self.students))
-        hard_workers = list(filter(lambda s: float(s["study_hours_per_day"]) > 4, self.students))
+        hard_workers = list(
+            filter(lambda s: float(s["study_hours_per_day"]) > 4, self.students)
+        )
 
         print("-" * 30)
         print("Lambda / Map / Filter")
